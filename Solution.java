@@ -29,8 +29,9 @@ public class Solution {                                        //1
         int cnt=0;
         for (int i = 0; i < k.length; i++) {
             if(k[i]%2==0)
-                cnt++;
-            if(cnt==2)break;
+            {cnt++;}
+            if(cnt==2)
+            {break;}
         }
         return cnt==2;
     }
@@ -39,7 +40,7 @@ public class Solution {                                        //1
     {
         int sum=0;
         for (int i = 1; i <= x/2; i++) {
-            if(x%i==0)sum+=i;
+            if(x%i==0){sum+=i;}
         }
         return sum==x;
     }
