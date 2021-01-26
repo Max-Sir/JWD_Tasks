@@ -18,7 +18,7 @@ public class Solution {                                        //1
         return monthStart.getActualMaximum(Calendar.DAY_OF_MONTH);
     }
 
-    double Squares(double S1)                                   //3
+    double squares(double S1)                                   //3
     {
         double S2= S1/2;
         return S2;
@@ -44,7 +44,7 @@ public class Solution {                                        //1
         return sum==x;
     }
 
-    void HH_MM_SS_DateFormatter(int n_th_second)                   //6
+    void hh_MM_SS_DateFormatter(int n_th_second)                   //6
     {
         System.out.println(LocalTime.ofSecondOfDay(n_th_second));
     }
@@ -58,19 +58,19 @@ public class Solution {                                        //1
                 String.format("(%.3f , %.3f)",x2,y2)));
     }
 
-    double F(double x)                                              //8
+    double f(double x)                                              //8
     {
         return (x<3)? 1/(Math.pow(x,3)-6) : -Math.pow(x,2)+3*x+9;
     }
 
-    double [] Circle(double R)
+    double [] circle(double R)
     {
         double S=Math.PI*Math.pow(R,2);
         double C=2*Math.PI*R;
         return new double[]{S,C};
     }
 
-    void F_tg_with_step(double a,double b,double h)
+    void f_tg_with_step(double a,double b,double h)
     {
         for (double i = a;BigDecimal.valueOf(i).compareTo(BigDecimal.valueOf(b))<0 ||
                 BigDecimal.valueOf(i).compareTo(BigDecimal.valueOf(b))==0; i+=h) {
